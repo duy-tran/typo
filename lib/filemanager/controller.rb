@@ -173,17 +173,17 @@ module Filemanager
 	    end
 	  end
 
-	  def transfer(from, to, target)
-	    if FM_ENCODING_TO.nil?
-	      target
-	    else
-	      if target.is_a?(Array)
-	        target.map{|i| to.nil? ? i : Iconv.conv(to, from, i)}
-	      else
-	        Iconv.conv(to, from, target)
-	      end
-	    end
-	  end
+	  #def transfer(from, to, target)
+	  #  if FM_ENCODING_TO.nil?
+	  #    target
+	  #  else
+	  #    if target.is_a?(Array)
+	  #      target.map{|i| to.nil? ? i : Iconv.conv(to, from, i)}
+	  #    else
+	  #      Iconv.conv(to, from, target)
+	  #    end
+	  #  end
+	  #end
 
 	  def encode(target)
 	    transfer(FM_ENCODING_FROM, FM_ENCODING_TO, target);

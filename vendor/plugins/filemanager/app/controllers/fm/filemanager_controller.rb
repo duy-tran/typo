@@ -6,7 +6,7 @@
   license terms as Ruby.
 =end
 
-require 'iconv'
+#require 'iconv'
 require 'fileutils'
 require 'filemanager/controller'
 
